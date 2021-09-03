@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Libre Franklin";
+  font-size: 1.5rem;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.page {
+  display: grid;
+  gap: 4rem;
+  justify-items: center;
+  padding: 5rem 0 3rem 0;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h2 {
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 2rem;
+}
+
+.black {
+  color: hsl(209, 33%, 12%);
+  font-weight: 900;
+}
+
+.input_grp {
+  width: 90%;
+  justify-self: center;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem 3rem;
+  border: 0.5px solid hsl(223, 100%, 88%);
+  border-radius: 30px;
+  outline: 0;
+}
+
+.text {
+  margin-top: 1rem;
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+::placeholder {
+  color: hsl(223, 100%, 88%);
+}
+
+.btn {
+  padding: 1rem 3rem;
+  border: 0;
+  border-radius: 30px;
+  width: 90%;
+  background: hsl(223, 87%, 63%);
+  color: #fff;
+  justify-self: center;
+  align-self: flex-start;
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  gap: 1rem 0;
+}
+
+.img {
+  width: 100%;
+}
+
+.bottom {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.bottom .icon_container {
+  width: 42px;
+  height: 42px;
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom .icon_container:hover {
+  background: hsl(223, 87%, 63%);
+  border: 0;
+  outline: 0;
+}
+
+.bottom .icon {
+  width: 20px;
+  height: 20px;
+  filter: invert(47%) sepia(24%) saturate(3599%) hue-rotate(205deg)
+    brightness(94%) contrast(102%);
+}
+
+.bottom .icon:hover {
+  filter: brightness(0) invert(1);
+}
+
+.copyright {
+  text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 60%;
+  }
+
+  .grid {
+    grid-template-columns: 70% 30%;
+  }
+}
